@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santé Sénégal - Plateforme Médicale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Santé Sénégal</h1>
+        <p>Votre plateforme de services médicaux et de santé en ligne</p>
+    </header>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#rdv">Prendre RDV</a>
+        <a href="#dossiers">Dossiers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="services">
+        <h2>Nos Services de Santé</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="images/consultation.jpg" alt="Consultation">
+                <h3>Consultations Générales</h3>
+                <p>Rencontrez nos médecins généralistes pour vos besoins quotidiens.</p>
+            </div>
+            <div class="card">
+                <img src="images/dentiste.jpg" alt="Dentiste">
+                <h3>Soins Dentaires</h3>
+                <p>Des soins bucco-dentaires de qualité pour tous les âges.</p>
+            </div>
+            <div class="card">
+                <img src="images/cardio.jpg" alt="Cardiologie">
+                <h3>Cardiologie</h3>
+                <p>Suivi et traitement des maladies cardiovasculaires.</p>
+            </div>
+            <div class="card">
+                <img src="images/analyse.jpg" alt="Laboratoire">
+                <h3>Analyses Médicales</h3>
+                <p>Tests sanguins, urinaires et examens de laboratoire spécialisés.</p>
+            </div>
+            <div class="card">
+                <img src="images/vaccin.jpg" alt="Vaccin">
+                <h3>Vaccination</h3>
+                <p>Vaccins pour enfants et adultes, grippe, Covid-19 et plus.</p>
+            </div>
+             
+        </div>
+    </section>
+
+    <section id="rdv">
+        <h2>Prendre Rendez-vous</h2>
+        <div class="form-section">
+            <form>
+                <label for="service">Type de service :</label>
+                <select id="service" name="service">
+                    <option value="consultation">Consultation</option>
+                    <option value="dentiste">Dentiste</option>
+                    <option value="cardiologie">Cardiologie</option>
+                    <option value="analyse">Analyses</option>
+                    <option value="vaccin">Vaccination</option>
+                </select>
+                <label for="nom">Nom complet :</label>
+                <input type="text" id="nom" name="nom" placeholder="Ex : Awa Ndiaye">
+                <label for="date">Date souhaitée :</label>
+                <input type="date" id="date" name="date">
+                <label for="message">Informations supplémentaires :</label>
+                <textarea id="message" rows="3" placeholder="Précisez vos symptômes ou préférences de médecin..."></textarea>
+                <button type="submit">Envoyer la demande</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="dossiers">
+        <h2>Vos Dossiers Médicaux</h2>
+        <p>Accédez à vos documents médicaux et résultats d’analyse :</p>
+        <img src="images/ma.jpg" alt="Dossier Médical" style="width: 100%; max-width: 600px; display: block; margin: auto; border-radius: 8px;">
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="form-section">
+            <form>
+                <input type="text" placeholder="Nom">
+                <input type="email" placeholder="Email">
+                <textarea rows="4" placeholder="Votre message..."></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Santé Sénégal - Plateforme de services médicaux</p>
+    </footer>
+</body>
+</html>

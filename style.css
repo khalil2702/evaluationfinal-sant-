@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #003366;
+}
+header, footer {
+    background-color: #005baa;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #007acc;
+}
+nav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: #005baa;
+}
+section {
+    padding: 2rem;
+}
+h1, h2 {
+    text-align: center;
+    color: #003366;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+.card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.form-section {
+    background-color: #e6f0ff;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+input, select, textarea, button {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #0077cc;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #005baa;
+}
+@media (max-width: 600px) {
+    nav a {
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+}
